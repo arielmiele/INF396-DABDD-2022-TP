@@ -31,7 +31,7 @@ DROP TABLE DIMFECHAS CASCADE CONSTRAINTS;
 
 DROP TABLE DIMPRODUCTOS CASCADE CONSTRAINTS;
 
--- Inicio de la creación de tablas en la base de datos
+-- Inicio de la creación de tablas en el Data Warehouse
 
 -- Creación de la tabla DIMFECHAS
 CREATE TABLE DIMFECHAS (
@@ -67,3 +67,35 @@ CREATE TABLE DIMCLIENTES (
     IDCLIENTE INT,
     NOMBRE VARCHAR (50)
 );
+
+-- Fin de la creación de tablas para el Data Warehouse
+
+-- Inicio de la creación de los procedimientos almacenados para la carga de datos
+
+-- Procedimiento almacenado que permite cargar fechas
+CREATE OR REPLACE PROCEDURE CARGAR_FECHAS ()
+IS
+-- Declaración de variables
+BEGIN
+-- Comienzo de la ejecución del procedimiento almacenado
+INSERT INTO DIMFECHAS (
+    
+)
+END;
+
+-- Procedimiento almacenado que permite cargar productos
+CREATE OR REPLACE PROCEDURE CARGAR_PRODUCTOS()
+IS
+END;
+
+-- Procedimiento almacenado que permite cargar pedidos
+CREATE OR REPLACE PROCEDURE CARGAR_PEDIDOS()
+IS
+END;
+
+-- Procedimiento almacenado que permite cargar clientes
+CREATE OR REPLACE PROCEDURE CARGAR_CLIENTES()
+IS
+END;
+
+-- Fin de la creación de los procedimientos almacenados para la carga de datos
