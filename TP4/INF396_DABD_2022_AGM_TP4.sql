@@ -26,7 +26,6 @@ Para ello se deben realizar las siguientes actividades:
 */
 
 -- Instrucciones para realizar el DROP de las tablas de la base de datos para comenzar desde 0 la ejecución
--- TODO #2
 
 DROP TABLE DIMFECHAS CASCADE CONSTRAINTS;
 
