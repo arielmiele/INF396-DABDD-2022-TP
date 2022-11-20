@@ -29,6 +29,7 @@ Para ello se deben realizar las siguientes actividades:
 Como estamos usando Oracle SQL y un esquema de Autonomouse Databases Online, 
 vamos a trabajar dentro de la misma base de datos anterior (según lo indicado por el profesor en el video explicativo sobre el TP4).
 Se mantienen los ejercicios generados durante los Trabajos Prácticos anteriores. Se indica con comentarios el inicio de la resolución del TP4.
+La Sección 1 de la resolución del TP4 comienza en la línea 1256.
 */
 
 -- Instrucciones para realizar el DROP de las tablas de la base de datos para comenzar desde 0 la ejecución
@@ -1237,6 +1238,9 @@ END;
 
 -- FIN Resolución TP2
 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+
 -- INICIO Resolución TP4
 
 -- Instrucciones para realizar el DROP de las tablas de la base de datos para comenzar desde 0 la ejecución
@@ -1248,6 +1252,10 @@ DROP TABLE DIMPRODUCTOS CASCADE CONSTRAINTS;
 DROP TABLE DIMCLIENTES CASCADE CONSTRAINTS;
 
 DROP TABLE FACTPEDIDOS CASCADE CONSTRAINTS;
+
+----------------------
+-- INICIO SECCION 1 --
+----------------------
 
 -- Inicio de la creación de tablas en el Data Warehouse
 
@@ -1292,6 +1300,10 @@ CREATE TABLE FACTPEDIDOS (
 
 -- Fin de la creación de tablas para el Data Warehouse
 
+-------------------
+-- FIN SECCION 1 --
+-------------------
+
 -- Comienzo de los DROP para los Procedimientos almacenados
 
 DROP PROCEDURE CARGAR_FECHAS;
@@ -1303,6 +1315,10 @@ DROP PROCEDURE CARGAR_CLIENTES;
 DROP PROCEDURE FACTURAR_PEDIDOS;
 
 -- Fin de los DROP para los Procedimientos Almacenados
+
+----------------------
+-- INICIO SECCION 2 --
+----------------------
 
 -- Inicio de la creación de los procedimientos almacenados para la carga de datos
 
@@ -1388,5 +1404,9 @@ EXECUTE FACTURAR_PEDIDOS;
 SELECT * FROM FACTPEDIDOS;
 
 -- Fin de la creación de los procedimientos almacenados para la carga de datos
+
+-------------------
+-- FIN SECCION 2 --
+-------------------
 
 -- FIN de la resolución del TP4
